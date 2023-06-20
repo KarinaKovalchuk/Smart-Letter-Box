@@ -11,17 +11,24 @@
 }
 
 body {
+    padding-bottom: 75px;
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
+    
+        background-image: url(../img/clouds.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    
 }
 
 .option {
