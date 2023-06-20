@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+:root {
+    --focus_color: #7a8fd7;
+    --main_color: #93A5E6;
+    --input_color: #3F59B6;
+    --back_color: #EDF1FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header {
+    background-color: var(--main_color);
+    width: 100%;
+}
+
+.header__content {
+    padding: 18px 0px 18px;
+}
+
+.header__content-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    user-select: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: Quicksand;
+}
+
+.user__name {
+    user-select: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.user-photo {
+    color: #fff;
+    border-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 25px;
+}
+
+.default-btn {
+    border: none;
+    color: #fff;
+    background-color: var(--main_color);
+    padding: 0.3em 1em;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.body__message input,
+.body__message textarea {
+    border: none;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    background-color: #fff;
+    color: var(--input_color);
+    margin-bottom: 1em;
+    resize: none;
+    outline: none;
+}
+
+.body__message input::placeholder,
+.body__message textarea::placeholder {
+    color: var(--input_color);
+}
+
+#text-message {
+    height: 300px;
+}
+
+#email {
+    width: 50% !important;
+}
+
+.message {
+    background-color: var(--back_color);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 15px;
+    box-shadow: 10px 10px 4px rgba(147, 165, 230, 0.53);
+    height: 100%;
+}
+
+.menu {
+    background: #93A5E6;
+    box-shadow: 10px 10px 4px rgba(133, 151, 215, 0.3);
+    border-radius: 10px;
+    width: 60px;
+    height: 100%;
+}
+
+.menu img {
+    width: 30px;
+    margin: 0.5em;
+}
+
+.menu__div {
+    height: 489px;
+}
+
+.mail__object {
+    border-radius: 10px;
+    background-color: #fff;
+    color: var(--main_color);
+    padding: 1em;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.mail__object p {
+    margin: 0;
+    color: var(--input_color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.active-filter {
+    box-shadow: 0px 0px 5px gray;
+}
+#list-messages {
+    overflow-y: scroll; 
+    padding-bottom: 15px;    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Letter Box</title>
+  <link href="../styles/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="container">
+        <div class="row">
+          <div class="header__content-inner">
+            <a class="header__title">Smart Letter Box</a>
+            <a class="user__name">Ім'я Користувача</a>
+            <!-- <a class="user-photo"></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-5 message d-flex flex-column align-items-center">
+        <div class="body__message p-1 d-flex flex-column w-100">
+          <input type="email" id="email" placeholder="Email" />
+          <input type="text" id="theme" placeholder="Тема повідомлення" />
+          <textarea id="text-message" placeholder="Message"></textarea>
+        </div>
+        <button class="default-btn" id="btn-send" type="submit">Надіслати</button>
+
+      </div>
+      <div class="col-6">
+        <div class="row menu__div d-flex align-items-center justify-content-around">
+          <div class="menu col-2 d-flex flex-column align-items-center">
+            <img id="recieved" class="active-filter" src="../img/sendbox-icon.svg" alt="icon">
+            <img id="sender" src="../img/sendbox-icon2.svg" alt="icon">
+          </div>
+          <div class="message col-10 m-0" id="list-messages">
+            <!-- <div class="mail__object d-flex justify-content-between">
+              <p>
+                Тема тексту
+              </p>
+              <input type="checkbox" >
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
