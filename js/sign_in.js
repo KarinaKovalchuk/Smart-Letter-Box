@@ -56,3 +56,19 @@ form.email.getElementsByTagName('input')[0].onfocus = deleteError
 // function redirectToPage() {
 //     window.location.href = "K:\2 kurs\2 semester\CursWork\html\index.html";
 // }
+document.querySelector("#sign-in").addEventListener("click", () => {
+    let email = document.querySelector("#emaill").value;
+    let password = document.querySelector("#pass").value;
+    fetch(
+        `https://localhost:44396/api/Mail/login?email=${email}&password=${password}`,
+        {
+            method: "POST",
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.status == 200) {
+                localStorage.setItem("user", email);
+                window.location.href = "../html/index.html";
+            }
+        })
+})

@@ -67,3 +67,20 @@ form.button.onclick = function () {
 };
 form.email.getElementsByTagName('input')[0].onblur = validateEmail
 form.email.getElementsByTagName('input')[0].onfocus = deleteError
+
+document.querySelector("#sign-up").addEventListener("click", () => {
+    let email = document.querySelector("#emaill").value;
+    let password = document.querySelector("#pass").value;
+    fetch(
+        `https://localhost:44396/api/Mail/register?email=${email}&password=${password}`,
+        {
+            method: "POST",
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.status == 200) {
+                localStorage.setItem("user", email);
+                window.location.href = "../html/index.html";
+            }
+        })
+})
