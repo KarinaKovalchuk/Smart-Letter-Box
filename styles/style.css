@@ -24,6 +24,7 @@ a {
 .header {
     background-color: var(--main_color);
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .header__content {
@@ -53,17 +54,6 @@ a {
     line-height: 20px;
 
     color: #FFFFFF;
-}
-
-.user-photo {
-    color: #fff;
-    border-color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 25px;
 }
 
 .default-btn {
@@ -121,6 +111,7 @@ a {
 .menu img {
     width: 30px;
     margin: 0.5em;
+    cursor: pointer;
 }
 
 .menu__div {
@@ -143,12 +134,103 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
+}
+
+.mail__object p:hover,
+.mail__object p:active {
+    cursor: pointer;
 }
 
 .active-filter {
     box-shadow: 0px 0px 5px gray;
 }
+
 #list-messages {
-    overflow-y: scroll; 
-    padding-bottom: 15px;    
+    overflow-y: scroll;
+    padding-bottom: 15px;
+}
+
+.custom-window {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px var(--main_color);
+    border-radius: 10px;
+    color: var(--input_color);
+    font-family: Quicksand;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(143, 153, 226, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(104, 54, 222, 0.1);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--main_color);
+}
+
+.modal-title {
+    background-color: var(--main_color);
+    width: 100%;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25px;
+}
+.modal-desc {
+    width: 100%;
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+#btn-close {
+    flex: end;
+    border: none;
+    color: #fff;
+    background-color: var(--main_color);
+    padding: 0.3em 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.alert {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.alert-primary {
+    background-color: #93a5e6b7;
+    border-color: #7a8fd7;
+    color: #ffffff;
+    cursor: text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
 }

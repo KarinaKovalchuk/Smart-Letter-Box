@@ -10,6 +10,7 @@ menu.forEach((btn) => {
   });
 });
 function loadMessages(id) {
+  console.log(id);
   let mainDiv = document.querySelector("#list-messages");
   mainDiv.innerHTML = "";
   fetch(
@@ -25,12 +26,42 @@ function loadMessages(id) {
         title.innerText = item.title;
         let isReaden = document.createElement("input");
         isReaden.type = "checkbox";
-        isReaden.checked = item.status;
+        isReaden.checked = item.isReaden;
+        isReaden.addEventListener("click", () => {
+          fetch(
+            `https://localhost:44396/api/Mail/set-is-readen?id=${item.id}`, {
+            method: "POST",
+          }).then((response) => {
+            if (response.status == 200) {
+              loadMessages(document.querySelector("img.active-filter").id);
+            }
+            else {
+              alert(response.status);
+            }
+          }
+          )
+        })
+        if (item.isReaden) {
+          title.style.color = "lightGray"
+          isReaden.disabled = true;
+        }
         div.append(title);
         div.append(isReaden);
         mainDiv.append(div);
+        title.addEventListener("click", () => {
+          // showPopup(item.title, item.desc);
+          document.getElementById("editModal").style.display = "block";
+          document.getElementById("editModal").classList.add("show");
+          document.getElementById("editModalTitle").innerText = item.title;
+          document.getElementById("modalDescription").innerText = item.description;
+          document.getElementById("btn-close").addEventListener("click", () => {
+            document.getElementById("editModal").style.display = "none";
+            document.getElementById("editModal").classList.remove("show");
+          })
+        });
       });
     });
+
 }
 document.querySelector("#btn-send").addEventListener("click", () => {
   let received = document.querySelector("#email").value;
@@ -60,3 +91,5 @@ function clearFields() {
   document.getElementById("theme").value = "";
   document.querySelector("#text-message").value = "";
 }
+
+
