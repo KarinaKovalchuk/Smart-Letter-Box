@@ -234,3 +234,12 @@ a {
     font-size: 18px;
     line-height: 25px;
 }
+
+#count-of-letters { 
+    margin: 0 5px;
+}
+
+.trash {
+    width: 20px;
+    height: 20px;
+}
