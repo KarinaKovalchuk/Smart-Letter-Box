@@ -59,6 +59,7 @@ form.email.getElementsByTagName('input')[0].onfocus = deleteError
 document.querySelector("#sign-in").addEventListener("click", () => {
     let email = document.querySelector("#emaill").value;
     let password = document.querySelector("#pass").value;
+    console.log(email);
     fetch(
         `https://localhost:44396/api/Mail/login?email=${email}&password=${password}`,
         {
@@ -66,6 +67,7 @@ document.querySelector("#sign-in").addEventListener("click", () => {
         })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data);
             if (data.status == 200) {
                 localStorage.setItem("user", email);
                 window.location.href = "../html/index.html";
