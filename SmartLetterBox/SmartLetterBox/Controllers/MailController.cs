@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using SmartLetterBox.DataLayer;
 using SmartLetterBox.JWT;
 using SmartLetterBox.ModelDTO;
-using SmartLetterBox.Validator;
 using SmartLetterBox.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using SmartLetterBox.Results;
+using SmartLetterBox.Validator;
 
 namespace SmartLetterBox.Controllers
 {
@@ -33,6 +34,21 @@ namespace SmartLetterBox.Controllers
             this.userManager = _userManager;
             this.signInManager = signInManager;
             this.jwtTokenService = _jWTTokenServices;
+        }
+
+        [HttpGet("get-letters")]
+        public List<LetterDTO> GetLetters()
+        {
+            return context.Letters.Select(l => new LetterDTO()
+             {
+                 Id = l.Id,
+                 Title = l.Title,
+                 Recieved = context.Users.FirstOrDefault(u => u.Id == l.RecievedId).Email,
+                 Description = l.Description,
+                 Status = l.Status,
+                 IsReaden = l.IsReaden,
+                 Sender = context.Users.FirstOrDefault(u => u.Id == l.SenderId).Email
+             }).ToList();
         }
 
         [HttpGet("get-received-letters")]
@@ -241,7 +257,7 @@ namespace SmartLetterBox.Controllers
             }
         }
 
-        [HttpGet("delete-by-id")]
+        [HttpPost("delete-by-id")]
         public void DeleteById([FromQuery] string id)
         {
             var letter = context.Letters.FirstOrDefault(x=>x.Id == Int32.Parse(id));

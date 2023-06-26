@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj": {}
+    "K:\\2 kurs\\2 semester\\CursWork\\Smart-Letter-Box\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj": {}
   },
   "projects": {
-    "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj": {
+    "K:\\2 kurs\\2 semester\\CursWork\\Smart-Letter-Box\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj",
+        "projectUniqueName": "K:\\2 kurs\\2 semester\\CursWork\\Smart-Letter-Box\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj",
         "projectName": "SmartLetterBox",
-        "projectPath": "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj",
+        "projectPath": "K:\\2 kurs\\2 semester\\CursWork\\Smart-Letter-Box\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\obj\\",
+        "outputPath": "K:\\2 kurs\\2 semester\\CursWork\\Smart-Letter-Box\\SmartLetterBox\\SmartLetterBox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
