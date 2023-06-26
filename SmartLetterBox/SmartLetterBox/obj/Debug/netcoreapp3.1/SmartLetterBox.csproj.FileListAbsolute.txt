@@ -68,3 +68,4 @@ K:\2 kurs\2 semester\CursWork\SmartLetterBox\SmartLetterBox\bin\Debug\netcoreapp
 K:\2 kurs\2 semester\CursWork\SmartLetterBox\SmartLetterBox\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 K:\2 kurs\2 semester\CursWork\SmartLetterBox\SmartLetterBox\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 K:\2 kurs\2 semester\CursWork\SmartLetterBox\SmartLetterBox\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+K:\2 kurs\2 semester\CursWork\SmartLetterBox\SmartLetterBox\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

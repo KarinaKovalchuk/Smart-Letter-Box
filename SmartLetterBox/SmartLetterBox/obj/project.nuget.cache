@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HDI+98k2rrXfIJCORyOUWC1eyNmWK1g1d1rjq+qmcp9NUhCsZZwi9aVniBlsMr3Av6qY0dXjZxxDvTekDcmukw==",
+  "dgSpecHash": "VwSvHpoFvGt99z3XyHoM9H7B6KneQu4BeAUBCeqN5hcOwdV2U6HlF0ahQ6/HeimD0lPFvBNlAkCFjT0xCgPmGQ==",
   "success": true,
   "projectFilePath": "K:\\2 kurs\\2 semester\\CursWork\\SmartLetterBox\\SmartLetterBox\\SmartLetterBox.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.32\\microsoft.aspnetcore.authentication.jwtbearer.3.1.32.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.32\\microsoft.aspnetcore.cryptography.internal.3.1.32.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.32\\microsoft.aspnetcore.cryptography.keyderivation.3.1.32.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.32\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.32.nupkg.sha512",
