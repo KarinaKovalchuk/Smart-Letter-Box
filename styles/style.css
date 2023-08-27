@@ -329,3 +329,7 @@ a {
         display: none;
     }
 }
+
+.width {
+    width: 80%;
+}

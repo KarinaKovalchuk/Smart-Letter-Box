@@ -36,6 +36,7 @@ function loadMessages(id) {
         let div = document.createElement("div");
         div.className = "mail__object d-flex justify-content-between";
         let title = document.createElement("p");
+        title.className = "width";
         title.innerText = item.title;
         let isReaden = document.createElement("input");
         isReaden.type = "checkbox";
